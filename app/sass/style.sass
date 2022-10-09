@@ -1,0 +1,597 @@
+@import "vars"
+@import "fonts"
+
+// start global style
+body 
+    color: $text-color
+    font-size: 18px
+    font-weight: 300
+    font-family: $main-font
+a,
+a:hover 
+    text-decoration: none
+.container 
+    width: 1080px 
+    max-width: 89vw
+    padding-left: 0 
+    padding-right: 0
+.button 
+    background: $blue
+    color: #fff
+    font-weight: 700
+    display: flex 
+    justify-content: center
+    line-height: 1
+    align-items: center
+    transition: all 0.5s
+
+
+.button:hover 
+    color: #fff
+    transform: scale(1.05)
+    transition: all 0.5s
+    box-shadow: 0 0.5rem 2rem -0.5rem rgb(25 40 75 / 30%)
+.h1 
+    color: $orange 
+    font-size: 55px 
+    font-weight: 700
+    line-height: 1.1
+.text-24 
+    font-size: 24px
+.section-header
+    text-align: center
+.h2 
+    font-size: 40px 
+    font-weight: 700
+.h3 
+    font-size: 24px 
+    font-weight: 700
+    
+.sub-title 
+    font-size: 21px
+    color: #969699
+    letter-spacing: 0.1em
+
+// end global style
+
+//start header style
+.header 
+    position: absolute
+    top: 0 
+    left: 0
+    width: 100%
+    z-index: 999
+
+    .container 
+        display: flex 
+        justify-content: space-between 
+        align-items: center
+.logo 
+    img 
+        width: 191px
+.header__content 
+    display: flex 
+    align-items: center
+.menu 
+    ul 
+
+        list-style: none 
+        padding: 0 
+        margin: 0
+    .menu-list 
+        display: flex
+.header__menu-link 
+    color: $text-color
+    padding: 30px 25px
+    display: flex 
+    justify-content: center 
+    align-items: center
+    cursor: pointer
+
+.header__menu-item:hover .header__menu-link
+    color: #fff
+    background: $orange
+    //text-shadow: 0 0 1px white
+    font-weight: 700
+    
+.menu-icon
+    display: block 
+    margin-left: 9px
+.header__login
+    color: $orange
+    font-weight: 700
+.header__login:hover 
+    color: $orange
+.button--header
+    height: 45px 
+    width: 124px
+    margin-left: 28px
+.header__buttons
+    display: flex 
+    align-items: center
+    margin-left: 55px
+.header__menu-item
+    position: relative
+.menu .sub__menu
+    position: absolute
+    top: 100%
+    left: 0
+    background: #f8f8f9
+    min-width: 158px
+    height: 0
+    transition: all 0.5s
+    overflow: hidden
+.header__menu-item:hover .sub__menu
+    height: 180px
+.sub-menu-link
+    height: 60px 
+    display: flex 
+    align-items: center
+    padding-left: 20px
+    color: $text-color
+    border-top: 1px solid #EAEAEA
+.sub-menu-link:hover 
+    background: $blue 
+    color: #fff
+.header 
+    transition: all 0.5s
+.header.hide 
+    transform: translateY(-100%)
+    background: #fff
+    
+    
+.header.sticky 
+    position: fixed  
+    transform: translateY(0%)
+    border-bottom: 1px solid #EAEAEA 
+    
+    
+//end header style 
+
+//start main-screen 
+.slider-content
+    min-height: 775px
+    background-color: #f8f8f9
+    background-image: url('../img/grey-bg.png')
+    background-size: 100%
+    background-repeat: no-repeat 
+    background-position: bottom center
+    padding-top: 96px
+    padding-bottom: 30px
+.slider-image
+    max-width: 100%
+  
+.slider-text 
+    width: 370px
+    margin-top: 20px
+    margin-bottom: 30px
+.slider-form
+    display: flex 
+    height: 50px
+    .slider-input,
+    .button
+        height: 100%
+        display: flex 
+        align-items: center
+    .button 
+        min-width: 132px
+        border: none 
+        outline: none
+.slider-input 
+    border: 1px solid #969699
+    background: #f8f8f9
+    padding-left: 16px
+    outline: none
+.slider-input::placeholder 
+    color: #969699
+    font-weight: 300 
+    font-family: $main-font
+.slider-input:focus::placeholder 
+    color: transparent
+.slider-content--orange
+    background-color: $orange
+    background-image: url('../img/bg-dot.png')
+.slider-content--orange
+    .h1 
+        color: #fff
+    .slider-text
+        color: #fff
+    .slider-input
+        background: $orange
+        color: #fff 
+        border-color: rgba(#fff, 0.5)
+        border-right: none
+    .slider-input::placeholder
+        color: #fff
+    .slider-input:focus::placeholder
+        color: transparent
+    .slider-image
+       max-width: 125%
+.slider-item-content 
+    padding-top: 170px
+.slider-content--grey
+    background-color: #2e2e33
+    background-image: url('../img/dot2.png')
+    .slider-image
+       max-width: 125%
+    .slider-text
+        color: #fff
+    .slider-input
+        background: #2e2e33
+ 
+//end main-scree
+.white-logo,
+.dark-logo
+    display: none
+.header.orange
+    .header__menu-link 
+        color: #fff 
+    .header__menu-item:hover .header__menu-link
+        background: #f8f8f9
+        color: $orange
+
+    .logo-image 
+        display: none 
+    .white-logo 
+        display: block
+    .header__login
+        color: #fff
+.header.grey
+    .header__menu-link 
+        color: #fff 
+    .logo-image 
+        display: none 
+    .white-logo 
+        display: none
+    .dark-logo 
+        display: block
+    .header__login
+        color: #fff
+
+
+.header.sticky.orange,
+.header.sticky.grey 
+    .header__menu-link
+        color: $text-color
+    .logo-image
+        display: block
+    .white-logo,
+    .dark-logo
+        display: none
+    .header__login
+        color: $orange
+//end about style
+.pricebar 
+    max-width: 100vw 
+    overflow: hidden
+    position: fixed 
+    bottom: 0 
+    left: 0 
+    width: 100%
+    z-index: 999
+    background: #f8f8f9
+    //transform: translateY(100%)
+    //transition: all 1s
+    padding-top: 11.5px 
+    padding-bottom: 11.5px
+    display: none
+    .ticker
+        //display: none
+.pricebar.show
+   // transform: translateY(0)
+    //transition: all 1s
+    .ticker
+        //display: block
+.ticker
+    width: 100vw
+.pricbar__list
+    display: flex
+.pricbar__item
+    display: flex 
+    align-items: center
+    padding: 0 12px
+.cur-name
+    padding-left: 8.4px
+    padding-right: 5px
+    font-weight: 700
+
+//start about style 
+.section 
+    padding: 90px 0
+.about-slider-wrapper
+    margin-top: 95px
+    text-align: center
+    position: relative
+.about-slider-item
+    padding: 0 15px
+    position: relative
+    padding-top: 37px
+.about-item
+    border-radius: 30px
+    background: #fff
+    border: 1px solid #eaeaea
+    padding: 50px 25px 16px 25px
+    .h3 
+        margin-bottom: 30px
+.read-more
+    color: $blue
+    font-weight: 700 
+    text-decoration: underline
+.read-more:hover 
+    color: $blue 
+    text-decoration: underline
+.about__icon
+    position: absolute
+    top: 0 
+    left: 50%
+    transform: translateX(-50%)
+.prev,
+.next 
+    cursor: pointer
+    position: absolute
+    z-index: 99
+.prev 
+    top: 50% 
+    left: -28px
+.next 
+    top: 50% 
+    right: -28px
+.slick-dots 
+    list-style: none 
+    display: flex
+    justify-content: center
+    margin-top: 41px
+    padding-left: 0
+    li 
+        button 
+            width: 6.5px 
+            height: 6.5px 
+            border-radius: 50%
+            background: #eaeaea
+            font-size: 0 
+            border: none
+            outline: none
+            padding: 0
+            margin: 0 8px
+    .slick-active 
+        button 
+            background: $orange
+            width: 10px 
+            height: 12px
+            clip-path: polygon(0 25%, 50% 1%, 100% 25%, 100% 75%, 50% 100%, 0 75%)
+    
+//end about style 
+
+//start converter style
+.quote-list 
+    margin-top: 25px
+.quote-item
+    display: flex
+    margin-bottom: 0px
+.quote-item__text
+    margin-left: 16px
+    margin-top: 28px
+.quote-list
+    width: 400px 
+    max-width: 100%
+.converter-content
+   border-radius: 30px
+   background: #f8f8f9
+   box-shadow: 0px 20px 35px rgba(235, 114, 59, 0.3)
+   padding: 46px
+   width: 450px
+   max-width: 100%
+.converter__select
+    width: 93px
+    margin-left: 26px
+.converter__input
+    width: calc(100% - 125px)
+    text-align: right
+    background: transparent
+    border: none
+    outline: none
+    border-bottom: 1px solid #eaeaea
+    padding-bottom: 10px
+    padding-top: 10px
+    padding-left: 35px
+    color: $orange 
+    font-weight: 700
+.converter__input::placeholder 
+    color: $orange 
+    font-weight: 700
+    font-size: 20px
+.converter__row
+    display: flex 
+    align-items: center
+    margin-bottom: 5px
+    position: relative
+.converter__row-title
+    color: #969699
+    position: absolute 
+    left: 0
+    font-weight: 400
+.converter__select
+    background: transparent
+    border: none 
+    padding-top: 10px 
+    padding-bottom: 10px
+    font-weight: 700
+    border-bottom: 1px solid #eaeaea
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    outline: none
+    cursor: pointer
+    background-image: url('../img/down2.svg')
+    background-repeat: no-repeat 
+    background-position: right center
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+    display: none
+    -webkit-appearance: none
+    margin: 0
+.button--buy
+    margin-top: 35px
+    width: 112px
+    margin-left: auto 
+    margin-right: auto
+    height: 45px
+    margin-bottom: 35px
+.converter__footer
+    display: flex 
+    justify-content: space-between
+    font-size: 16px
+    color: #969699
+.converter__footer-link 
+    color: $blue 
+    text-decoration: underline
+    font-weight: 700
+.converter 
+    padding-top: 0
+//end converter style
+
+//start statistic style
+.statistic 
+    padding-top: 153px
+    background: url('../img/statistics.svg')
+    background-position: top center
+    background-repeat: no-repeat
+.statistic__content 
+    background: #2E2E33
+    padding-top: 47px 
+    padding-bottom: 62px
+    color: #fff 
+    text-align: center
+    position: relative
+    z-index: -1
+.statistics-title
+    font-size: 39px 
+    font-weight: 700
+    color: $orange
+//end statistic style
+
+//start popular 
+
+.popular__row
+    padding-top: 9.5px 
+    padding-bottom: 9.5px
+    border-bottom: 1px solid #eaeaea
+    display: flex
+    align-items: center
+     
+.popular__row--header 
+    padding-top: 26px
+    padding-bottom: 26px
+    font-size: 12px
+    color: #969699
+    text-transform: uppercase
+    font-weight: 700
+.popular__col:first-child 
+    width: 93px
+    text-align: center
+.popular__col:nth-child(2)
+    width: 210px
+.popular__col:nth-child(3)
+    width: 230px
+.popular__col:nth-child(4)
+    width: 215px
+.popular__col:nth-child(5)
+    width: 124px
+.popular__col:nth-child(6)
+    width: 104px
+
+
+.popular__cur-name
+    display: flex 
+    align-items: center 
+    
+    img 
+        width: 40px 
+        margin-right: 28px
+.cur-ab
+    color: $orange
+.change
+    color: $orange 
+    font-weight: 700
+.chart-img 
+    max-width: 100% 
+    margin-left: auto 
+    margin-right: auto
+.button--table
+    display: flex 
+    justify-content: center 
+    align-items: center
+    width: 62px 
+    height: 33px
+    font-size: 16px
+//end popular 
+
+//start tools style 
+.tools 
+    background: url('../img/tools.png')
+    background-size: cover 
+    background-position: bottom center
+    .row 
+        display: flex 
+        //align-items: center
+        margin-top: 50px
+    .quote-list
+       margin-top: 75px
+.tools-image 
+    max-width: 100%
+//end tools style
+
+//start help style
+.help 
+    .row 
+        margin-top: 55px
+        text-align: center
+    p 
+        margin-bottom: 5px
+.help-item
+    width: 270px 
+    max-width: 100%
+    margin-left: auto 
+    margin-right: auto
+.help-icon 
+    height: 177px
+//end help style 
+
+//start footer style
+.footer__menu 
+    display: flex 
+    justify-content: space-between
+    padding-top: 63px 
+    padding-bottom: 63px
+    border-top: 1px solid #eaeaea
+.footer__menu-link
+    font-weight: 700 
+    img 
+        display: none
+    color: $orange
+.footer__sub-link
+    color: $text-color 
+    display: block
+    font-size: 15px
+.footer__social 
+    display: flex 
+    align-items: center
+    margin-bottom: 60px
+.footer__social-title 
+    font-weight: 700
+    margin-right: 5px
+.footer__socila-links
+    display: flex 
+    align-items: center
+.social__link 
+    margin-left: 15px
+.disclamer
+    font-size: 11px
+    padding-bottom: 65px
+//end footer style 
+
+@import "media"
+
+
+
+

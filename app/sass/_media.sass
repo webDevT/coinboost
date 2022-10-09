@@ -1,0 +1,392 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	.header__menu-link
+		padding: 30px 20px
+	.header__buttons 
+		margin-left: 30px
+	.slider-content--orange .slider-image 
+		max-width: 100%
+	.slider-item-content 
+		padding-top: 5vw
+	.slider-content
+		min-height: auto
+	.slider-content--grey .slider-image
+		max-width: 100%
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1100px)
+	/**/
+	.header__menu-link
+		padding: 30px 15px
+	.statistic
+		background-position: top left 5vw
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.container 
+		max-width: 95vw
+	.logo img
+		width: 150px
+	.header__buttons 
+		margin-left: 8px
+	.button--header 
+		margin-left: 15px
+	.header__menu-link 
+		padding: 30px 7px
+	.slider-item-content 
+		padding-top: 8vw
+	.h1 
+		br 
+			display: none
+	.next 
+		right: -13px
+	.prev 
+		left: -13px
+	.converter-content 
+		margin-left: auto 
+		margin-right: auto
+	.converter 
+		.row 
+			display: flex 
+			flex-direction: column-reverse
+		.h2 
+			text-align: center
+			br 
+				display: none
+	.quote-list 
+		width: 100%
+		margin-bottom: 11.733vw
+	.quote-item__text 
+		margin-top: 0
+	.quote-item
+		align-items: center
+		margin-bottom: 2vw
+	.statistic  
+		padding-top: 190px
+	.popular__col:nth-child(3)
+		width: 100px
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767.5px)
+	/**/
+	.header__buttons 
+		display: none
+	.menu 
+		display: none
+	.header 
+		padding: 2vw 0
+	.logo img
+		width: 51.200vw
+	.menu__btn-row
+		width: 7.733vw
+		height: 0.533vw 
+		background: $orange
+		margin-bottom: 2.533vw
+		border-radius: 2vw
+	.menu__btn-row:last-child 
+		margin-bottom: 0
+	.container 
+		max-width: 89vw
+	.menu__btn
+		cursor: pointer
+	.menu 
+		position: absolute
+		top: 100% 
+		left: 0 
+		width: 100%
+		background: #f8f8f9
+		border-top: 1px solid #eaeaea
+	.menu-list 
+		flex-direction: column
+	.header__menu-link
+		padding-top: 4vw 
+		padding-bottom: 4vw
+		font-size: 6.667vw
+		font-weight: 700 
+		color: $orange
+		justify-content: flex-start
+		padding-left: 6.933vw
+		padding-right: 6.933vw
+	.header__menu-item:hover .header__menu-link
+		background: transparent 
+		color: $orange
+	.menu-icon
+		display: none
+	.header__menu-item:hover .sub__menu
+		height: auto
+	.header__menu-item .sub__menu
+		height: auto
+	.menu .sub__menu
+		position: static
+		display: none
+	.sub-menu-link
+		padding: 0 
+		height: 13.333vw
+		border: none
+		padding-left: 6.933vw
+		padding-right: 6.933vw
+		font-size: 6.667vw
+	.header__menu-link
+		width: 100%
+	.header__menu-item--sub
+		width: 100%
+		.header__menu-link,
+		.header__menu-link:hover
+
+			background: url('../img/down.svg')
+			background-repeat: no-repeat
+			background-position: right 6.933vw center
+	.slider-content .slider-image
+		margin-left: auto 
+		margin-right: auto
+		max-width: 100vw
+		position: relative
+		//left: -12vw
+	.slider-content--orange .slider-image,
+	.slider-content--grey .slider-image
+		//left: -5vw
+	.slider-item-content 
+		padding-top: 0
+	.slider-content
+		padding-top: 25.600vw
+	.main-screen 
+		.h1 
+			text-align: center
+			font-size: 13.333vw
+	.slider-text
+		text-align: center 
+		max-width: 100% 
+		width: 100%
+		margin-top: 6.667vw
+		margin-bottom: 6.667vw
+		br 
+			display: none
+	.slider-form 
+		max-width: 100%
+		height: 13.333vw
+		margin-bottom: 12vw
+	.slider-content .slider-input
+		width: 53.333vw
+	.slider-content
+		.button 
+			width: 35.200vw
+			min-width: 35.200vw
+			font-size: 4.800vw
+	body 
+		font-size: 4.800vw
+	.slider-content .slider-image
+		width: 100%
+	.section 
+		padding-top: 13.333vw
+		padding-bottom: 13.333vw
+	.slider-content
+		padding-bottom: 0
+		min-height: 214vw
+	.prev
+		left: -4vw
+	.next 
+		right: -4vw
+	.prev,
+	.next 
+		width: 3.600vw
+	.header.orange
+		.menu__btn-row
+			background: #fff
+	.header.sticky.orange
+		.menu__btn-row
+			background: $orange
+	.h2 
+		font-size: 10.667vw
+	.sub-title 
+		font-size: 5.600vw
+	.about-slider-wrapper
+		margin-top: 5vw
+	.about__icon
+		width: 17.333vw
+	.about-item
+		padding: 13.333vw 5.067vw 3.467vw 5.067vw
+	.h3 
+		font-size: 6.4vw
+	.about-item .h3 
+		margin-bottom: 8vw
+	.read-more
+		color: #AFA507
+	.slick-dots
+		margin-top: 0vw
+	.quote-item 
+		img 
+			min-width: 8.533vw
+	.converter
+		.h2 
+			margin-bottom: 5vw
+	.quote-item 
+		align-items: flex-start
+	.quote-item__text 
+		margin-top: 1.5vw
+	.converter-content
+		width: 100%
+		padding: 7.733vw
+	.converter__input,
+	.converter__input:placeholder
+
+		font-size: 5.333vw
+	.button--buy
+		width: 29.867vw
+		height: 12vw
+	.converter__footer 
+		font-size: 4.267vw
+		img 
+			width: 9.867vw
+		img:nth-child(4)
+			display: none
+	.statistic 
+		padding-top: 26.667vw
+		background-size: 189.867vw
+		background-position: top left
+	.statistic__content 
+		padding-top: 23.467vw
+		padding-bottom: 5vw
+	.statistics-title 
+		font-size: 10.400vw
+	.statistics-text 
+		margin-bottom: 11.733vw
+	.popular__cur-name 
+		span 
+			display: none
+	.popular__col:nth-child(4)
+		display: none
+	.popular__col:nth-child(6)
+		display: none
+	.popular__col:first-child
+		width: 12.800vw
+	.popular__col:nth-child(2)
+		width: 16vw
+	.popular__col:nth-child(3)
+		width: 19vw
+	.popular__col:nth-child(5) 
+		width: 22vw
+	.popular__row--header
+		font-size: 3.200vw
+	.popular__cur-name img 
+		margin-right: 0
+		width: 10.667vw
+	.popular__row
+		padding-top: 2.6vw 
+		padding-bottom: 2.6vw 
+	.button--table 
+		width: 16.533vw
+		height: 8.800vw
+		font-size: 4.267vw
+	.h2 
+		margin-bottom: 10vw
+	.tools .quote-list 
+		margin-top: 0vw
+	.help-item 
+		margin-bottom: 15vw
+		.read-more 
+			color: $blue
+	.help-item 
+		width: 90%
+	.footer__menu 
+		flex-direction: column
+		padding-top: 15vw
+	.footer__menu-item 
+		margin-bottom: 2vw
+	.footer__menu-sub 
+		padding-top: 2vw
+	.footer__sub-link,
+	.footer__menu-link
+		font-size: 5.600vw
+	.footer__sub-link 
+		margin-bottom: 1vw
+	.footer__social
+		flex-direction: column 
+		align-items: center
+	.footer__social-title 
+		margin-right: 0
+		font-size: 5.600vw
+		margin-bottom: 2vw
+	.footer__socila-links
+		width: 100% 
+		justify-content: space-between
+		padding-bottom: 10vw
+		img 
+			width: 8.533vw
+	.footer__menu-link 
+		margin: 0
+	.disclamer 
+		font-size: 2.933vw
+		padding-bottom: 16vw
+	.footer__menu-link 
+		display: flex 
+		justify-content: space-between
+		img 
+			display: block 
+			width: 5.067vw
+	.footer__menu-sub 
+		display: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+
+
+
+
