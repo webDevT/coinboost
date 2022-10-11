@@ -23,13 +23,13 @@ a:hover
     justify-content: center
     line-height: 1
     align-items: center
-    transition: all 0.5s
+    transition: all 0.2s
 
 
 .button:hover 
     color: #fff
     transform: scale(1.05)
-    transition: all 0.5s
+    //stransition: all 0.5s
     box-shadow: 0 0.5rem 2rem -0.5rem rgb(25 40 75 / 30%)
 .h1 
     color: $orange 
@@ -41,10 +41,11 @@ a:hover
 .section-header
     text-align: center
 .h2 
-    font-size: 40px 
+    font-size: 36px 
+    line-height: 40px
     font-weight: 700
 .h3 
-    font-size: 24px 
+    font-size: 21px 
     font-weight: 700
     
 .sub-title 
@@ -206,14 +207,14 @@ a:hover
     .slider-input:focus::placeholder
         color: transparent
     .slider-image
-       max-width: 125%
+       max-width: 110%
 .slider-item-content 
     padding-top: 170px
 .slider-content--grey
     background-color: #2e2e33
     background-image: url('../img/dot2.png')
     .slider-image
-       max-width: 125%
+       max-width: 110%
     .slider-text
         color: #fff
     .slider-input
@@ -271,12 +272,15 @@ a:hover
     z-index: 999
     background: #f8f8f9
     //transform: translateY(100%)
-    //transition: all 1s
+    transition: all 1s
     padding-top: 11.5px 
     padding-bottom: 11.5px
-    display: none
+    transform: translateY(100%)
+    //display: none
     .ticker
         //display: none
+.pricebar.active 
+    transform: translateY(0%)
 .pricebar.show
    // transform: translateY(0)
     //transition: all 1s
@@ -359,7 +363,25 @@ a:hover
             width: 10px 
             height: 12px
             clip-path: polygon(0 25%, 50% 1%, 100% 25%, 100% 75%, 50% 100%, 0 75%)
-    
+.main-screen 
+    .slick-dots  
+        margin-top: -100px
+        z-index: 99
+        position: relative
+        li 
+            button 
+                background: #fff 
+                border: 1px solid $blue
+                width: 8px 
+                height: 8px
+        .slick-active 
+            button
+                background: $blue
+                border: none
+                width: 12px 
+                height: 14px
+                //background: $blue
+
 //end about style 
 
 //start converter style
@@ -368,16 +390,18 @@ a:hover
 .quote-item
     display: flex
     margin-bottom: 0px
+    margin-bottom: 10px
 .quote-item__text
     margin-left: 16px
-    margin-top: 28px
+    margin-top: 5px
+    font-size: 21px
+    line-height: 30px
 .quote-list
     width: 400px 
     max-width: 100%
 .converter-content
    border-radius: 30px
    background: #f8f8f9
-   box-shadow: 0px 20px 35px rgba(235, 114, 59, 0.3)
    padding: 46px
    width: 450px
    max-width: 100%
@@ -453,9 +477,9 @@ input::-webkit-inner-spin-button
 //start statistic style
 .statistic 
     padding-top: 153px
-    background: url('../img/statistics.svg')
-    background-position: top center
-    background-repeat: no-repeat
+    //background: url('../img/statistics.svg')
+    //background-position: top center
+    //background-repeat: no-repeat
 .statistic__content 
     background: #2E2E33
     padding-top: 47px 
@@ -468,6 +492,8 @@ input::-webkit-inner-spin-button
     font-size: 39px 
     font-weight: 700
     color: $orange
+.statistics-text 
+    font-size: 21px
 //end statistic style
 
 //start popular 
@@ -555,6 +581,8 @@ input::-webkit-inner-spin-button
     margin-right: auto
 .help-icon 
     height: 177px
+    img 
+        width: 154px
 //end help style 
 
 //start footer style
@@ -576,7 +604,7 @@ input::-webkit-inner-spin-button
 .footer__social 
     display: flex 
     align-items: center
-    margin-bottom: 60px
+  
 .footer__social-title 
     font-weight: 700
     margin-right: 5px
@@ -589,7 +617,53 @@ input::-webkit-inner-spin-button
     font-size: 11px
     padding-bottom: 65px
 //end footer style 
+.number-icon
+    width: 33px 
+    min-width: 33px
+    height: 38px
+    display: flex 
+    justify-content: center 
+    align-items: center
+    background: url(../img/1n.svg)
+    background-size: 100%
+    background-repeat: no-repeat 
+    background-position: center
+    color: #fff 
+    font-weight: 700
+   
 
+.price-name
+    display: flex 
+    align-items: center 
+    color: $text-color
+.price-name:hover 
+    color: $text-color
+.pricbar__item
+    display: flex 
+    align-items: center
+.logo-footer 
+    width: 160px
+.footer__row 
+    display: flex 
+    justify-content: space-between 
+    align-items: center
+    margin-bottom: 60px
+.statistic 
+    position: relative
+    padding-top: 270px
+.statistic-img
+    overflow: hidden
+    position: absolute 
+    top: 0
+    width: 100%
+    img 
+        width: 1080px
+        display: block 
+        margin-left: auto 
+        margin-right: auto
+.help p
+    font-size: 16px 
+    line-height: 25px
 @import "media"
 
 

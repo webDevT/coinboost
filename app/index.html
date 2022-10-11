@@ -24,9 +24,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 	<div class="container">
 		<div class="logo">
 			<a href="index.html">
-				<img src="img/logo.svg" alt="" class="logo-image">
+				<img src="img/logo-header-lightbg.svg" alt="" class="logo-image">
 				<img src="img/logo-white.svg" alt="" class="white-logo">
-				<img src="img/logo-dark.svg" alt="" class="dark-logo">
+				<img src="img/logo-header-greybg.svg" alt="" class="dark-logo">
 				
 			</a>
 			</div>
@@ -344,7 +344,7 @@ today with as little as $100
 				</div>
 				<div class="quote-list">
 					<div class="quote-item">
-						<img src="img/1n.svg" alt="">
+						<div class="number-icon">1</div>
 						<div class="quote-item__text">
 							<span class="fw-bold">
 Secure
@@ -353,7 +353,7 @@ Secure
 						</div>
 					</div>
 					<div class="quote-item">
-						<img src="img/2n.svg" alt="">
+						<div class="number-icon">2</div>
 						<div class="quote-item__text">
 							<span class="fw-bold">
 								Easy
@@ -362,7 +362,7 @@ Secure
 						</div>
 					</div>
 					<div class="quote-item">
-						<img src="img/3n.svg" alt="">
+						<div class="number-icon">3</div>
 						<div class="quote-item__text">
 							<span class="fw-bold">
 								Quick
@@ -379,6 +379,9 @@ Secure
 
 <!-- start statistic section -->
 <section class="statistic">
+	<div class="statistic-img">
+		<img src="img/statistics.svg" alt="">
+	</div>
 	<div class="statistic__content">
 		<div class="container">
 			<div class="row">
@@ -721,7 +724,7 @@ Secure
 			<div class="col-md-5">
 				<div class="quote-list">
 					<div class="quote-item">
-						<img src="img/1n.svg" alt="">
+						<div class="number-icon">1</div>
 						<div class="quote-item__text">
 							<span class="fw-bold">
 								Fast execution speed 
@@ -730,7 +733,7 @@ Secure
 						</div>
 					</div>
 					<div class="quote-item">
-						<img src="img/2n.svg" alt="">
+						<div class="number-icon">2</div>
 						<div class="quote-item__text">
 							<span class="fw-bold">
 								Low spreads
@@ -739,7 +742,7 @@ Secure
 						</div>
 					</div>
 					<div class="quote-item">
-						<img src="img/3n.svg" alt="">
+						<div class="number-icon">3</div>
 						<div class="quote-item__text">
 							<span class="fw-bold">
 								Deep liquidity
@@ -893,29 +896,33 @@ Secure
 
 
 		</div>
-
-		<div class="footer__social">
-			<div class="footer__social-title">
-				Social
-			</div>
-			<div class="footer__socila-links">
-				<a href="" class="social__link">
-					<img src="img/s1.png" alt="">
-				</a>
-				<a href="" class="social__link">
-					<img src="img/s2.png" alt="">
-				</a>
-				<a href="" class="social__link">
-					<img src="img/s3.png" alt="">
-				</a>
-				<a href="" class="social__link">
-					<img src="img/s4.png" alt="">
-				</a>
-				<a href="" class="social__link">
-					<img src="img/s5.png" alt="">
-				</a>
-			</div>
+<div class="footer__row">
+	<div class="footer__social">
+		<div class="footer__social-title">
+			Social
 		</div>
+		<div class="footer__socila-links">
+			<a href="" class="social__link">
+				<img src="img/s1.png" alt="">
+			</a>
+			<a href="" class="social__link">
+				<img src="img/s2.png" alt="">
+			</a>
+			<a href="" class="social__link">
+				<img src="img/s3.png" alt="">
+			</a>
+			<a href="" class="social__link">
+				<img src="img/s4.png" alt="">
+			</a>
+			<a href="" class="social__link">
+				<img src="img/s5.png" alt="">
+			</a>
+		</div>
+	</div>
+
+	<img src="img/logo-footer.svg" alt="" class="logo-footer">
+</div>
+		
 
 		<div class="disclamer">
 			Disclaimer: Donec sit amet turpis suscipit, efficitur purus porta, imperdiet mauris. Mauris quis metus leo. Vivamus eu justo mi. Nulla interdum ut nisi ac commodo. Aenean efficitur augue ac elit ultricies iaculis. Curabitur vel sagittis justo. Integer posuere fringilla semper. Pellentesque ac mi mi. Fusce fermentum felis vitae enim ullamcorper, in laoreet orci porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris sagittis tellus ut fringilla interdum. Aliquam nulla diam, maximus non congue vel, tristique ut elit. Sed placerat diam mauris, sed porttitor dolor tempor quis. Aliquam rutrum lectus sed diam volutpat, vel pretium velit posuere. Proin pellentesque mi quam, in faucibus urna laoreet id. Cras tristique dolor at tempor auctor. Curabitur at leo molestie, semper nibh eget, vulputate diam. Nunc in magna sit amet libero commodo bibendum. Ut id libero dolor. Duis maximus velit non lacinia condimentum. Suspendisse placerat vitae lorem et lacinia. Sed molestie malesuada eros, accumsan blandit nulla porta id. Nunc rhoncus congue odio, et sodales odio. Praesent dignissim neque quis accumsan laoreet. Suspendisse non odio ultricies, sodales urna ut, varius ipsum. Quisque nec augue consectetur, convallis nisl eget, pellentesque quam. Morbi ac lectus et sem aliquam gravida sed sit amet tortor. Fusce massa metus, convallis eget laoreet ac, blandit a ante.
@@ -926,34 +933,43 @@ Secure
 
 <!-- start pricebar -->
 <div class="pricebar">
-	<marquee class="ticker">
+	<div class="marquee">
 		<div class="pricbar__list">
 			<div class="pricbar__item">
-			<img src="img/btc1.svg" alt="">
+				<a href="#" class="price-name">
+<img src="img/btc1.svg" alt="">
 			<div class="cur-name">
 				Bitcoin
 			</div>
+				</a>
+			
 			<div class="price">
 				US$19,807.55 USD
 			</div>
 		</div>
 
 		<div class="pricbar__item">
+			<a href="#" class="price-name">
 			<img src="img/2.svg" alt="">
 			<div class="cur-name">
 				Ethereum
+			</div>
+			</a>
 			</div>
 			<div class="price">
 				US$1,548.36
 			</div>
 
-		</div>
+	
 
 		<div class="pricbar__item">
-			<img src="img/3.svg" alt="">
+			<a href="#" class="price-name">
+				<img src="img/3.svg" alt="">
 			<div class="cur-name">
 				Tether
 			</div>
+			</a>
+			
 			<div class="price">
 				US$1.00
 			</div>
@@ -961,10 +977,13 @@ Secure
 		</div>
 
 		<div class="pricbar__item">
-			<img src="img/4.svg" alt="">
+			<a href="#" class="price-name">
+				<img src="img/4.svg" alt="">
 			<div class="cur-name">
 				BNB
 			</div>
+			</a>
+			
 			<div class="price">
 				US$275.98
 
@@ -973,10 +992,13 @@ Secure
 		</div>
 
 		<div class="pricbar__item">
-			<img src="img/5.svg" alt="">
+			<a href="#" class="price-name">
+				<img src="img/5.svg" alt="">
 			<div class="cur-name">
 				XRP
 			</div>
+			</a>
+			
 			<div class="price">
 				US$0.329
 			</div>
@@ -984,10 +1006,13 @@ Secure
 		</div>
 
 		<div class="pricbar__item">
-			<img src="img/6.svg" alt="">
+			<a href="#" class="price-name">
+				<img src="img/6.svg" alt="">
 			<div class="cur-name">
 				Cardano
 			</div>
+			</a>
+			
 			<div class="price">
 				US$0.4716
 			</div>
@@ -995,10 +1020,13 @@ Secure
 		</div>
 
 		<div class="pricbar__item">
-			<img src="img/7.svg" alt="">
+			<a href="#" class="price-name">
+				<img src="img/7.svg" alt="">
 			<div class="cur-name">
 				Solana
 			</div>
+			</a>
+			
 			<div class="price">
 				US$31.04
 			</div>
@@ -1006,10 +1034,13 @@ Secure
 		</div>
 
 		<div class="pricbar__item">
-			<img src="img/8.svg" alt="">
+			<a href="#" class="price-name">
+				<img src="img/8.svg" alt="">
 			<div class="cur-name">
 				Polkadot
 			</div>
+			</a>
+			
 			<div class="price">
 				US$7.23
 
@@ -1018,10 +1049,13 @@ Secure
 		</div>
 
 		<div class="pricbar__item">
-			<img src="img/9.svg" alt="">
+			<a href="#" class="price-name">
+				<img src="img/9.svg" alt="">
 			<div class="cur-name">
 				Dai
 			</div>
+			</a>
+			
 			<div class="price">
 				US$0.9993
 			</div>
@@ -1033,7 +1067,7 @@ Secure
 		</div>
 
 		
-	</marquee>
+	</div>
 </div>
 <!-- end pricebar -->
 
@@ -1045,6 +1079,10 @@ Secure
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.6.0/jquery.marquee.js"></script>
+	<script>
+	
+	</script> 
 </body>
 </html>
 

@@ -14,12 +14,25 @@ $(window).scroll(function() {
 
     $(window).scroll(function() {
         if ($(this).scrollTop() > 10){
-        $('.pricebar').slideDown()
+        $('.pricebar').addClass('active')
+        
         }
         else{
-       $('.pricebar').slideUp();
+       $('.pricebar').removeClass('active');
         }
+
+
         });   
+ $('.marquee').marquee({ 
+              duration: 7000, 
+              startVisible: true, 
+              duplicated: true,
+              duration: 20000,
+            
+            }); 
+         
+       
+           
     //-------start mobil menu---------- 
 //start updates
 var lastScrollTop = 0;
@@ -70,7 +83,8 @@ $('.slider').slick({
     prevArrow: false,
     nextArrow: false,
     fade: true,
-    autoplay: true
+    //autoplay: true,
+    dots: true
 });
 
 $('.about-slider').slick({
