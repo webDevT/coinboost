@@ -50,7 +50,21 @@ $(window).scroll(function(event){
 });
 
 //end updates
+if($(window).width() < 768) {
+var lastScrollTop = 0;
+$(window).scroll(function(event){
+   var st = $(this).scrollTop();
+   if (st > lastScrollTop || $(this).scrollTop() > 1) {
 
+       $('.menu').slideUp();
+       
+   } else {
+
+      
+   }
+   lastScrollTop = st;
+});
+}
 
 // start width control on hover menu link 
 if($(window).width() > 768) {
