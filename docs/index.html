@@ -130,7 +130,7 @@ today with as little as $100
 					
 					</div>
 					<div class="col-md-7">
-						<img src="img/phone.png" alt="" class="slider-image"> 
+						<img src="img/phone.png" alt="" class="slider-image hero-paralax"> 
 					</div>
 
 					
@@ -161,7 +161,7 @@ today with as little as $100
 						
 					</div>
 					<div class="col-md-7">
-						<img src="img/phones.png" alt="" class="slider-image"> 
+						<img src="img/phones.png" alt="" class="slider-image hero-paralax"> 
 					</div>
 
 					
@@ -192,7 +192,7 @@ today with as little as $100
 						
 					</div>
 					<div class="col-md-7">
-						<img src="img/phones.png" alt="" class="slider-image"> 
+						<img src="img/phones.png" alt="" class="slider-image hero-paralax"> 
 					</div>
 
 					
@@ -380,7 +380,7 @@ Secure
 <!-- start statistic section -->
 <section class="statistic">
 	<div class="statistic-img">
-		<img src="img/statistics.svg" alt="">
+		<img src="img/statistics.svg" alt="" class="stat-paralax">
 	</div>
 	<div class="statistic__content">
 		<div class="container">
@@ -753,8 +753,8 @@ Secure
 				</div>
 			</div>
 			<div class="col-md-7">
-				<img src="img/ignite-ipad.png" alt="" class="tools-image">
-				<img src="img/ignite-iphone.png" alt="" class="tools-image2">
+				<img src="img/ignite-ipad.png" alt="" class="tools-image paralax">
+				<img src="img/ignite-iphone.png" alt="" class="tools-image2 paralax2">
 			</div>
 		</div>
 	</div>
@@ -1081,9 +1081,40 @@ Secure
 	<script src="js/main.js"></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.6.0/jquery.marquee.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
 	<script>
-	
-	</script> 
+	var image = document.getElementsByClassName('paralax');
+new simpleParallax(image, {
+   delay: 0.5,
+   orientation: 'left',
+   scale: 1.2,
+   overflow: true
+});
+
+var image = document.getElementsByClassName('paralax2');
+new simpleParallax(image, {
+   delay: 0.5,
+   orientation: 'bottom',
+   scale: 1.4,
+   overflow: true
+});
+
+var image = document.getElementsByClassName('stat-paralax');
+new simpleParallax(image, {
+   delay: 0.5,
+   orientation: 'top',
+   scale: 1.3,
+   overflow: true
+});
+
+var image = document.getElementsByClassName('hero-paralax');
+new simpleParallax(image, {
+   delay: 0.5,
+   orientation: 'left',
+   scale: 1.2,
+   overflow: true
+});
+	</script>
 </body>
 </html>
 
